@@ -34,6 +34,7 @@ destination_path = "grades.xlsx"
 download_file_from_drive(file_id, destination_path)
 
 # Function to load the main DataFrame
+@st.cache_data
 def load_data():
     df_main = pd.read_excel('df_with_grades.xlsx')
     return df_main
