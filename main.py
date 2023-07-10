@@ -53,3 +53,4 @@ def load_module(file_name, module_name)
 
 
 my_module = load_module("courses_app.py", "courses_app_run")
+st.write(f"courses_app.py was imported as {__name__}")
