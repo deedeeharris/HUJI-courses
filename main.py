@@ -39,7 +39,7 @@ file_id = st.secrets["grades_df"]
 destination_path = "grades.xlsx"
 download_file_from_drive(file_id, destination_path)
 
-# download files
+# download filesa
 file_id = st.secrets["main_py"]
 destination_path = "courses_app.py"
 download_file_from_drive(file_id, destination_path)
@@ -58,7 +58,7 @@ file_path = os.path.join(file_directory, file_name)
 if os.path.exists(file_path):
     st.write("File exists.")
     # Import and run the function from the file
-    import courses_app
+    #import courses_app
     #main_app()
 else:
     print("File does not exist.")
