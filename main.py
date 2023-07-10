@@ -34,11 +34,6 @@ destination_path = "grades.xlsx"
 download_file_from_drive(file_id, destination_path)
 
 
-# download files
-file_id = st.secrets["grades_df"]
-destination_path = "grades.xlsx"
-download_file_from_drive(file_id, destination_path)
-
 # download filesa
 file_id = st.secrets["main_py"]
 destination_path = "courses_app.py"
