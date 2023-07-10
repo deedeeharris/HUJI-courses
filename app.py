@@ -155,6 +155,7 @@ def main():
 
     # Page title and subtitle
     st.title('Course Details and Grades')
+    st.markdown('## Yedidya Harris, Bnaya Hami @ 71253, HUJI')
     st.subheader('Search by Course Number')
 
     # Course number search input
