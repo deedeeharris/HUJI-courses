@@ -47,7 +47,7 @@ download_file_from_drive(file_id, destination_path)
 import sys
 import os
 
-file_directory = ""  # Replace with the actual directory containing courses_app.py
+file_directory = "/app/huji-courses"  # Replace with the actual directory containing courses_app.py
 file_name = "courses_app.py"
 
 # Add the file directory to the Python path
