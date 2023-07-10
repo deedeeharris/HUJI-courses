@@ -163,7 +163,7 @@ def main():
 
     # Course number search input
     # Use st.columns to create two columns
-    col1, col2 = st.columns([0.7, 0.3])
+    col1, col2 = st.columns([0.2, 0.8])
     with col1:
         course_number = st.text_input('Enter a course number:', 71449)
         search_button = st.button('Search')
