@@ -65,6 +65,7 @@ def plot_teacher_visualizations(df):
 
 
 # Read the DataFrame and calculate attendance score
+@st.cache_data
 def read_main_df():
     df_main = pd.read_excel('df_with_grades.xlsx')
     # Drop duplicate rows based on teacher, course number, group type, and year
