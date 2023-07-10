@@ -44,7 +44,7 @@ import importlib.util
 import sys
 import os
 
-def load_module(file_name, module_name)
+def load_module(file_name, module_name):
     spec = importlib.util.spec_from_file_location(module_name, file_name)
     module = importlib.util.module_from_spec(spec)
     sys.modules[module_name] = module
