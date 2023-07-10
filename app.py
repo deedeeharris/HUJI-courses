@@ -162,7 +162,7 @@ def main():
 
 
     # Course number search input
-    course_number = st.text_input('Enter a course number:', value='71449')
+    course_number = st.text_input('Enter a course number:', 71449)
     search_button = st.button('Search')
 
     # Perform search and display results
