@@ -213,7 +213,7 @@ def main():
                             
 
             if not result.empty:
-                st.success('Course details found.\n\nClick [here](https://shnaton.huji.ac.il/index.php/NewSyl/{course_number}) for updated course syllabus.')
+                st.success(f'Course details found.\n\nClick [here](https://shnaton.huji.ac.il/index.php/NewSyl/{course_number}) for updated course syllabus.')
 
                 teachers = ', '.join(result['name'].values)
                 with st.container():
