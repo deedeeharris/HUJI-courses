@@ -58,7 +58,7 @@ file_path = os.path.join(file_directory, file_name)
 if os.path.exists(file_path):
     st.write("File exists.")
     # Import and run the function from the file
-    #import courses_app
+    from courses_app import yedidya
     #main_app()
 else:
     print("File does not exist.")
