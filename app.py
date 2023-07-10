@@ -122,7 +122,7 @@ def display_teacher_scores(result):
 def main():
     # Set page title and background color
     st.set_page_config(
-        page_title='Course Details and Grades at the Faculty of Agriculture (HUJI)',
+        page_title='HUJI - Courses',
         page_icon=':mortar_board:',
         layout='wide',
         initial_sidebar_state='collapsed'
@@ -154,7 +154,7 @@ def main():
     df_grades = load_grade_data()
 
     # Page title and subtitle
-    st.title('Course Details and Grades')
+    st.title('Course Details and Grades at the Faculty of Agriculture (HUJI)')
     st.markdown('### Yedidya Harris, Bnaya Hami @ 71253, HUJI')
     st.subheader('Search by Course Number')
 
