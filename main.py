@@ -44,10 +44,17 @@ file_id = st.secrets["main_py"]
 destination_path = "courses_app.py"
 download_file_from_drive(file_id, destination_path)
 
+import sys
 import os
 
-file_path = "courses_app.py"
+file_directory = ""  # Replace with the actual directory containing courses_app.py
+file_name = "courses_app.py"
 
+# Add the file directory to the Python path
+sys.path.append(file_directory)
+
+# Check if the file exists
+file_path = os.path.join(file_directory, file_name)
 if os.path.exists(file_path):
     print("File exists.")
     # Import and run the function from the file
