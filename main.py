@@ -42,18 +42,16 @@ download_file_from_drive(file_id, destination_path)
 import sys
 import os
 
-file_directory = "/app/huji-courses"  # Replace with the actual directory containing courses_app.py
 file_name = "courses_app.py"
 
 # Add the file directory to the Python path
-sys.path.append(file_directory)
+sys.path.append(file_name)
 
 # Check if the file exists
-file_path = os.path.join(file_directory, file_name)
-if os.path.exists(file_path):
+if os.path.exists(file_name):
     st.write("File exists.")
     # Import and run the function from the file
-    from courses_app import yedidya
+    from courses_app.py import yedidya
     #main_app()
 else:
     print("File does not exist.")
