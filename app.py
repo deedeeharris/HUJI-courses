@@ -162,8 +162,12 @@ def main():
 
 
     # Course number search input
-    course_number = st.text_input('Enter a course number:', 71449)
-    search_button = st.button('Search')
+    # Use st.columns to create two columns
+    col1, col2 = st.columns([0.7, 0.3])
+    with col1:
+        course_number = st.text_input('Enter a course number:', 71449)
+        search_button = st.button('Search')
+    with col2: pass
 
     # Perform search and display results
     if search_button:
