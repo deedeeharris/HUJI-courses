@@ -3,7 +3,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import io
 import requests
-
+# Set page title and background color
+st.set_page_config(
+page_title='HUJI - Courses',
+page_icon=':mortar_board:',
+layout='wide',
+initial_sidebar_state='collapsed'
+)
 @st.cache
 def download_file_from_drive(file_id, destination_path):
     url = f"https://drive.google.com/uc?export=download&id={file_id}"
@@ -122,13 +128,7 @@ def display_teacher_scores(result):
 
 # Main Streamlit app
 def main():
-    # Set page title and background color
-    st.set_page_config(
-        page_title='HUJI - Courses',
-        page_icon=':mortar_board:',
-        layout='wide',
-        initial_sidebar_state='collapsed'
-    )
+
     st.markdown(
         """
         <style>
