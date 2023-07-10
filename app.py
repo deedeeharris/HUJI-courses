@@ -10,7 +10,8 @@ page_icon=':mortar_board:',
 layout='wide',
 initial_sidebar_state='collapsed'
 )
-@st.cache
+
+@st.cache_data
 def download_file_from_drive(file_id, destination_path):
     url = f"https://drive.google.com/uc?export=download&id={file_id}"
     response = requests.get(url)
