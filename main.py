@@ -56,7 +56,7 @@ sys.path.append(file_directory)
 # Check if the file exists
 file_path = os.path.join(file_directory, file_name)
 if os.path.exists(file_path):
-    print("File exists.")
+    st.write("File exists.")
     # Import and run the function from the file
     #from courses_app import main_app
     #main_app()
