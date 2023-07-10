@@ -157,7 +157,7 @@ def main():
     st.title('Course Details and Grades at the Faculty of Agriculture (HUJI)')
     st.markdown('### Yedidya Harris, Bnaya Hami @ 71253, HUJI')
     st.subheader('Search by Course Number')
-    st.markdown('#### (Data updated as of 2022)')
+    st.markdown('###### (Data updated as of 2022)')
 
 
     # Course number search input
