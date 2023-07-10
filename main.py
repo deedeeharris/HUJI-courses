@@ -44,5 +44,8 @@ file_id = st.secrets["main_py"]
 destination_path = "courses_app.py"
 download_file_from_drive(file_id, destination_path)
 
-from courses_app import main_app
-main_app() 
+try:
+    from courses_app import main_app
+    main_app()
+except ImportError:
+    st.write("Failed to import 'courses_app' module.")
