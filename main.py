@@ -39,19 +39,17 @@ file_id = st.secrets["main_py"]
 destination_path = "courses_app.py"
 download_file_from_drive(file_id, destination_path)
 
+
+import importlib.util 
 import sys
 import os
 
-file_name = "courses_app.py"
+def load_module(file_name, module_name)
+    spec = importlib.util.spec_from_file_location(module_name, file_name)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[module_name] = module
+    spec.loader.exec_module(module)
+    return module
 
-# Add the file directory to the Python path
-sys.path.append(file_name)
 
-# Check if the file exists
-if os.path.exists(file_name):
-    st.write("File exists.")
-    # Import and run the function from the file
-    from courses_app.py import yedidya
-    #main_app()
-else:
-    print("File does not exist.")
+my_module = load_module("courses_app.py", "courses_app_run")
