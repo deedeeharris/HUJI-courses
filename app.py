@@ -104,7 +104,7 @@ def search_course(df, course_number):
     return result
 
 def display_teacher_scores(result):
-    result['official_teacher_score'] = result['official_teacher_score'] * 10
+    result.loc[:, 'official_teacher_score'] *= 10  # Use .loc indexer to set values
     teacher_df = result[['name', 'official_teacher_score', 'teacher_score_in_chug']]
 
     st.markdown('### 👩‍🏫 Teachers and Scores:', unsafe_allow_html=True)
