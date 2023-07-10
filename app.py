@@ -16,13 +16,13 @@ def download_file_from_drive(file_id, destination_path):
     else:
         print("Failed to download file.")
 
-# download json
+# download files
 file_id = st.secrets["main_df"]
 destination_path = "df_with_grades.xlsx"
 download_file_from_drive(file_id, destination_path)
 
 
-# download json
+# download files
 file_id = st.secrets["grades_df"]
 destination_path = "grades.xlsx"
 download_file_from_drive(file_id, destination_path)
